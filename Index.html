@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sound Cloud App by Yoav Ganbar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="container center-block">
+<header class="row col-md-12">
+    <h1>Sound Cloud App</h1>
+    <h4>by Yoav Ganbar</h4>
+</header>
+    <div class="col-md-4 col-xs-12 colyog left" >
+        <h2>Search Here</h2>
+        <div class="search-container">
+            <input type="search" class="search" placeholder="Search">
+            <button class="btn btn-primary" onclick="getSearchResults()">Go</button>
+        </div>
+
+        <div class="resultsRow">
+            <ul id="results">
+
+            </ul>
+        </div>
+        <div class="buttons">
+            <button class="btn" onclick="nextRes()" id="next"><span class="glyphicon glyphicon-arrow-right"
+                                                                    aria-hidden="true"></span> Next
+            </button>
+            <button class="btn" onclick="listView()"><span class="glyphicon glyphicon-list"></span> List</button>
+            <button class="btn" onclick="tileView()"><span class="glyphicon glyphicon-th-large"></span> Tile</button>
+        </div>
+    </div>
+    <div class="col-md-4 col-xs-12 colyog middle">
+    <h2>Art / Player</h2>
+        <div id="imageContainer" data-toggle="tooltip" title="Click To Play Track!">
+
+        </div>
+
+    </div>
+    <div id="recent" class="col-md-4 col-xs-12 colyog">
+        <h2>Recent Searches</h2>
+        <ul id="recentList">
+
+        </ul>
+    </div>
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="http://connect.soundcloud.com/sdk.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+img {
+    width: 250px;
+    padding-bottom: 10px;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+}
+h1 {
+    background: linear-gradient(to bottom,#308b9f, #3b6580);
+    font-weight: bold;
+    color: floralwhite;
+    height: 45px;
+    text-shadow: 3px 3px 5px rgba(17, 17, 17, 0.82);
+    border-radius: 50%;
+
+}
+.colyog {
+    height: 500px;
+    width: 33%;
+    background: rgba(134, 134, 134, 0.36);
+    text-align: center;
+    border: 1px solid black;
+
+}
+.left {
+    text-align: left;
+    position: relative;
+}
+.left img {
+    width: 50px;
+}
+.middle {
+    overflow: hidden;
+}
+li {
+    cursor: pointer;
+    cursor: hand;
+}
+li:hover {
+    color: #ac0000;
+}
+.buttons {
+    position: absolute;
+    top: 450px;
+}
+.buttons .btn {
+    background: rgba(108, 108, 108, 0.85);
+    color: aliceblue;
+}
+#results {
+    padding-top: 25px;
+}
+#recentList li {
+    text-align: left;
+}
+.tile-view {
+    list-style: none;
+    display: inline;
+    padding: 5px;
+}
+#imageContainer {
+    cursor: pointer;
+}
+#imageContainer:hover{
+    content: "Click To Play Track";
+    font-size: 10px;
+    color: aliceblue;
+}
+/* animations */
+
+.element-animation{
+    animation: animationFrames ease 0.5s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    animation-fill-mode:forwards; /*when the spec is finished*/
+}
+
+@keyframes animationFrames{
+    0% {
+        opacity:1;
+        transform:  translate(0px,0px)  ;
+    }
+    100% {
+        opacity:0;
+        transform:  translate(308px,-8px)  ;
+    }
+}
+
+.img-animation{
+    animation: imgAnimationFrames ease-out 2s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    animation-fill-mode:forwards; /*when the spec is finished*/
+}
+
+@keyframes imgAnimationFrames{
+    0% {
+        opacity:0;
+        transform:  translate(0px,0px)  ;
+    }
+    100% {
+        opacity:1;
+        transform:  translate(NaNpx,0px)  ;
+    }
+}
+
+
